@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2f34;
+    font-family: "Poppins";
+}
+
+li, a button{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: #202022;
+}
+
+.logotipo{
+     color: #fff;
+     font-size: 35px;
+     font-weight: bold;
+}
+
+.nav-link{
+     list-style: none;
+}
+
+.nav-link li{
+     display: inline-block;
+     padding: 0px 20px;
+}
+
+.nav-link li a:hover{
+     color: aquamarine; 
+     cursor: pointer;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: rgb(45, 79, 95);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+button:hover{
+    padding: 10px 20px;
+    background-color: aquamarine;
+    text-decoration: none;
+}
+
+@media (max-width: 800px){
+    li, a button{
+        font-size: 12px;
+   }
+
+
+}
+
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: aqua;
+    text-decoration: solid black;
+    padding: 30px 40px 1px;
+}
+
+.font{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(252, 253, 253);
+    padding: 20px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    padding: 70px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2d2f34;
+    font-family: "Poppins", sans-serif;
+}
+
+li, a, button {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    background-color: #202022;
+}
+
+.logotipo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.nav-link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-link li a:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(45, 79, 95);
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: aquamarine;
+    color: #202022;
+}
+
+.titulo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: aqua;
+    padding: 30px 40px 1px;
+    text-align: center;
+}
+
+.font {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: rgb(252, 253, 253);
+    padding: 20px;
+}
+
+.conteudos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background-color: #13132c;
+    padding: 40px;
+    border-radius: 60px;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+
+.card h2 {
+    color: aquamarine;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: rgb(86, 103, 139);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: aquamarine;
+    background-color: #383b42;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+@media (max-width: 800px) {
+
+    li, a, button {
+        font-size: 12px;
+    }
+
+    .conteudos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-link li {
+        padding: 0px 8px;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-link {
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav-link li {
+        padding: 8px;
+    }
+
+    .conteudos {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 28px;
+        padding: 25px 15px;
+    }
+
+}
+
+
+
+
+

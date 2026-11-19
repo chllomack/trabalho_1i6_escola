@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="index.style.css">
+</head>
+<body>
+    <header>
+           <span class="logotipo">Index.</span>
+           <nav>
+              <ul class="nav-link">
+                <li><a href="Index.html">Index</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="https://www.todamateria.com.br/matematica/" >Toda Materia</a></li>
+                <li><a href="Conteudo.html"> conteúdo</a></li>
+                <li><a href="Exercicios.html"> Exercícios</a></li>
+              </ul>
+           </nav>
+           <a href="Index.html"><button>voltar</button></a>
+           <a href="contatos.html"><button>Contatos</button></a>
+    </header>       
+    <p class="titulo">Matemática<img src="matematica.png" align="center"></p><br>
+    <p align="left" class="font">A matemática é uma matéria muito importante que está presente em nosso dia a dia.
+        Ela nos ajuda a resolver problemas, fazer cálculos, medir objetos e compreender melhor o mundo ao nosso redor.
+        Com ela, aprendemos operações como adição, subtração, multiplicação e divisão. Além disso, a matemática desenvolve
+        nosso raciocínio lógico e nossa capacidade de encontrar soluções para diferentes situações. </p><br><br><br>
+
+        <h1>algumas das coisas que iremos mostrar serão curiosidades e a Importância e historia da matematica</h1>
+
+
+        <div class="cards-container">
+
+    <div class="card">
+        <img src="historia_matematica.jpg">
+        <div>
+            <h1>Importância da Matemática</h1>
+            <h2>a matemática é essencial para compreender o mundo, solucionar problemas e desenvolver novas tecnologias.</h2>
+            <span>saiba mais</span>
+            <a href="sobre.html"><button>click aqui</button></a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="matematica.index_função.jpg">
+        <div>
+            <h1>A História da Matemática</h1>
+            <h2>é o estudo de como a matemática surgiu e evoluiu ao longo dos séculos. O conteúdo que você mostrou na imagem está relacionado à área da matemática chamada Teoria dos Conjuntos e Funções.</h2>
+            <span>saiba mais</span>
+            <a href="sobre.html"><button>click aqui</button></a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="matematica_index.jpg">
+        <div>
+            <h1>Áreas de aplicação da Matemática</h1>
+            <h2>A matemática é utilizada em diversas áreas do conhecimento e em situações do nosso cotidiano. Na engenharia e na arquitetura, ajuda na construção de prédios, pontes e casas. Na medicina, é usada para calcular doses de medicamentos e analisar exames. Na economia, auxilia no controle de gastos, investimentos e cálculos financeiros.</h2>
+            <span>saiba mais</span>
+            <a href="sobre.html"><button>click aqui</button></a>
+            
+        </div>
+    </div>
+
+</div>
+
+<a class="preguiça" href="https://www.youtube.com/watch?v=xb2fLB1AWhI"> fiquei com preguiça de usar o translate e trasnform</a>
+
+ <div class="carousel">
+
+        <div class="carousel-container" id="carousel">
+
+            <div class="slide">
+                <img src="etec-identidade.jpg" alt="logo da escola">
+                <div class="texto">
+                    <h2>Escola etec ellias nechar</h2>
+                    <p>Trabalho daniela 1°I6</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="programação.jpeg" alt="Paisagem de natureza">
+                <div class="texto">
+                    <h2>programação</h2>
+                    <p>sei la</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="matematica3.png" alt="Montanhas e lago">
+                <div class="texto">
+                    <h2>matematica</h2>
+                    <p>e suas curiosidades e historia.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="anterior" onclick="mudarSlide(-1)">&#10094;</button>
+
+        <button class="proximo" onclick="mudarSlide(1)">&#10095;</button>
+
+    </div>
+
+    <script>
+        let indice = 0;
+
+        const carousel = document.getElementById("carousel");
+        const slides = document.querySelectorAll(".slide");
+
+        function mudarSlide(direcao) {
+
+            indice += direcao;
+
+            if (indice >= slides.length) {
+                indice = 0;
+            }
+
+            if (indice < 0) {
+                indice = slides.length - 1;
+            }
+
+            carousel.style.transform =
+                `translateX(-${indice * 100}%)`;
+        }
+    </script>
+
+        
+
+    <footer class="footer">
+         <h3>Leonardo henrique santo aversani</h3>
+
+    <p>Todos os direitos reservados para Leonardo</p>
+
+    <p>Contato: emailimaginario@gmail.com</p>
+    </footer>
+</body>
+</html>
